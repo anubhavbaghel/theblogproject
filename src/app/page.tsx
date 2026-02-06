@@ -11,7 +11,7 @@ export default function Home() {
           THE DAILY SUTRA
         </h1>
         <div className="space-x-4 text-sm font-mono uppercase tracking-widest">
-          <Link href="#" className="hover:text-brand-laser">Manifesto</Link>
+          <Link href="#" className="hover:text-brand-laser">About</Link>
           <Link href="/dashboard" className="text-brand-laser hover:text-white">Agent Login</Link>
         </div>
       </nav>
@@ -20,13 +20,13 @@ export default function Home() {
       <header className="relative py-24 px-6 border-b border-brand-grid/30 overflow-hidden">
         <div className="max-w-4xl mx-auto text-center relative z-10">
           <p className="text-brand-laser font-mono text-sm tracking-[0.2em] mb-6 uppercase">
-            Threading the Signal Through the Noise
+            Tech Made Simple
           </p>
           <h2 className="text-5xl md:text-7xl font-black text-white mb-8 tracking-tighter leading-[0.9]">
-            DISCOVERING THE <br /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-laser to-white">FUTURE OF BEING</span>
+            WHERE COMPLEX <br /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-laser to-white">BECOMES CLEAR</span>
           </h2>
-          <p className="text-xl text-brand-steel/60 max-w-2xl mx-auto leading-relaxed">
-            A next-generation publication curated by autonomous agents. We decode technology, finance, and culture for the modern thinker.
+          <p className="text-xl text-brand-steel/80 max-w-2xl mx-auto leading-relaxed">
+            A place where confusion turns into understanding. We explain AI, cloud, web dev, and emerging tech in a way that respects your intelligence—no condescension, just clarity.
           </p>
         </div>
 
@@ -36,19 +36,23 @@ export default function Home() {
 
       {/* Featured Articles Grid */}
       <main className="max-w-7xl mx-auto px-6 py-24">
+        <h3 className="text-xs uppercase tracking-widest text-brand-steel/40 font-bold mb-12 text-center">
+          Latest Guides
+        </h3>
+
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
 
           {/* Article 1 */}
           <article className="group cursor-pointer">
             <div className="aspect-video bg-brand-surface border border-brand-grid/30 mb-6 group-hover:border-brand-laser/50 transition-colors relative overflow-hidden">
               <div className="absolute inset-0 bg-brand-carbon/50 group-hover:bg-transparent transition-colors"></div>
-              <div className="absolute bottom-4 left-4 font-mono text-xs bg-brand-carbon px-2 py-1 border border-brand-grid">TECH & AI</div>
+              <div className="absolute bottom-4 left-4 font-mono text-xs bg-brand-carbon px-2 py-1 border border-brand-grid">AI & ML</div>
             </div>
             <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-brand-laser transition-colors">
-              The Rise of Agentic Workflows
+              Understanding LLMs Without the Hype
             </h3>
             <p className="text-brand-steel/60 leading-relaxed text-sm">
-              Why 2026 is the year AI stops chatting and starts doing. An in-depth look at systems like YANTRA.
+              What are Large Language Models really doing? A beginner-friendly breakdown of transformers, tokens, and training.
             </p>
           </article>
 
@@ -56,13 +60,13 @@ export default function Home() {
           <article className="group cursor-pointer">
             <div className="aspect-video bg-brand-surface border border-brand-grid/30 mb-6 group-hover:border-brand-laser/50 transition-colors relative overflow-hidden">
               <div className="absolute inset-0 bg-brand-carbon/50 group-hover:bg-transparent transition-colors"></div>
-              <div className="absolute bottom-4 left-4 font-mono text-xs bg-brand-carbon px-2 py-1 border border-brand-grid">FINANCE</div>
+              <div className="absolute bottom-4 left-4 font-mono text-xs bg-brand-carbon px-2 py-1 border border-brand-grid">WEB DEV</div>
             </div>
             <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-brand-laser transition-colors">
-              Crypto's "Blue Ocean" Moment
+              React vs. Next.js: Which Should You Learn?
             </h3>
             <p className="text-brand-steel/60 leading-relaxed text-sm">
-              Navigating the post-regulation landscape. Where the smart money is moving in Q1.
+              Confused about the React ecosystem? Here's a practical guide to choosing the right framework for your first project.
             </p>
           </article>
 
@@ -70,16 +74,26 @@ export default function Home() {
           <article className="group cursor-pointer">
             <div className="aspect-video bg-brand-surface border border-brand-grid/30 mb-6 group-hover:border-brand-laser/50 transition-colors relative overflow-hidden">
               <div className="absolute inset-0 bg-brand-carbon/50 group-hover:bg-transparent transition-colors"></div>
-              <div className="absolute bottom-4 left-4 font-mono text-xs bg-brand-carbon px-2 py-1 border border-brand-grid">LIFE & ECO</div>
+              <div className="absolute bottom-4 left-4 font-mono text-xs bg-brand-carbon px-2 py-1 border border-brand-grid">CLOUD</div>
             </div>
             <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-brand-laser transition-colors">
-              Digital Minimalism in a Hyper-Connected Age
+              What is "The Cloud" Actually?
             </h3>
             <p className="text-brand-steel/60 leading-relaxed text-sm">
-              Strategies for maintaining focus and sanity when your coworkers are algorithms.
+              Beyond the buzzword: how cloud computing works, why it matters, and when you actually need it.
             </p>
           </article>
 
+        </div>
+
+        {/* Mission Statement */}
+        <div className="mt-24 max-w-3xl mx-auto text-center border-t border-brand-grid/30 pt-16">
+          <h4 className="text-2xl font-bold text-white mb-6">Our Promise</h4>
+          <div className="space-y-4 text-brand-steel/70 leading-relaxed">
+            <p>✦ Complex tech feels simple</p>
+            <p>✦ Confusion turns into understanding</p>
+            <p>✦ Beginners, learners, and builders feel respected—not talked down to</p>
+          </div>
         </div>
       </main>
 

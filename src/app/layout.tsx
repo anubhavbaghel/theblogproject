@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "YANTRA | The Signal Engine",
-  description: "Constructivist intelligence. Threading the signal through the noise.",
+  title: "The Daily Sutra | Tech Made Simple",
+  description: "Where complex tech becomes clear. A place for beginners, learners, and builders to understand technology without the jargon.",
 };
 
 export default function RootLayout({
